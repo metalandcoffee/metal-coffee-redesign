@@ -1,3 +1,8 @@
+:root {
+  --white: #FFF;
+  --black: #16111C;
+}
+
 html,
 body {
   padding: 0;
@@ -13,4 +18,14 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--black);
+  font-size: 16px;
+}
+
+html {
+  font-size: 100%
 }
