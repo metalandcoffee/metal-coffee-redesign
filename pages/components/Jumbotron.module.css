@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    padding: 0 4rem;
+    display: grid;
+    grid-column-gap: 12rem;
+    grid-template-columns: auto repeat(2, 500px);
+    grid-template-rows: 600px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.heading {
+    margin-bottom: 1rem;
+}
+
+.background {
+    background: no-repeat url('/gradient-bkgd.png');
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socials li:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.buttons button:first-child {
+    margin-right: 1.5rem;
+}
+
+.img_container {
+    position: relative;
+    bottom: -2px;
+}
+
+.bio {
+    font-size: 1.1rem;
+    opacity: 0.65;
+    line-height: 2rem;
+}

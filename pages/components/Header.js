@@ -1,25 +1,22 @@
-import styles from './Header.module.css'
 import Image from 'next/image'
+import styles from './Header.module.css'
+import Icon from './Icons/Search'
 import logo from '../../public/metalcoffeepink.png'
 
 export default function Header() {
     return (
-        <header>
+        <header className={styles.container} >
             <Image
                 src={logo}
                 alt="Metal & Coffee Logo"
             />
-            <ul>
-                <li>Portfolio</li>
-                <li>Blog</li>
-                <li>Contacts</li>
+            <ul className={styles.nav}>
+                <li className="nav__item"><a href="">Home</a></li>
+                <li className="nav__item"><a href="">Portfolio</a></li>
+                <li className="nav__item"><a href="">Blog</a></li>
+                <li className="nav__item"><a href="">Contact</a></li>
             </ul>
-            <Image
-                src="/search.svg"
-                alt="Search"
-                width={50}
-                height={50}
-            />
+            <Icon />
         </header>
     )  
 }

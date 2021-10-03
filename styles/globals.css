@@ -1,31 +1,154 @@
 :root {
   --white: #FFF;
   --black: #16111C;
+  --pink: #DB749D;
+  --green: #55A569;
 }
 
-html,
+html {
+  font-size: 100%;
+}
+
 body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--white);
+  fill: var(--white);
+  background-color: var(--black);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1, h2, h3, h4, h5, h6, button {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  color: var(--white);
-  background-color: var(--black);
-  font-size: 16px;
+h1 {
+  font-size: 3rem;
 }
 
-html {
-  font-size: 100%
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 1.3rem;
+  color: var(--white);
+  background-color: var(--pink);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+}
+
+button.outline {
+  background-color: transparent;
+  border: solid 2px var(--pink);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+hr {
+  display: inline-block;
+  width: 10rem;
+  border: solid 1px var(--pink);
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.container {
+  padding: 0 9.5rem;
+}
+
+.mini-heading {
+  font-size: 1rem;
+  color: var(--pink);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  display: inline-grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+}
+
+.mini-heading::before,
+.mini-heading::after {
+  content: '';
+  width: 4rem;
+  height: 2px;
+  background-color: var(--pink);
+}
+
+.category {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--green);
+  font-family: 'Rajdhani', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.post__meta-entry,
+.nav__item {
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.05rem;
+  opacity: 0.65;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.post__meta-entry:hover,
+.nav__item:hover {
+  opacity: 1;
+}
+
+.post__meta {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.post__meta-entry {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-gap: 5px;
 }
