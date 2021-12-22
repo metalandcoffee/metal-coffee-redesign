@@ -21,15 +21,21 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+
+// Colors.
+$background: #16111c;
+$fontColor: #fff;
+
+// Global.
 html {
-  font-size: 100%;
+	font-size: 100%;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  background-color: #16111c;
-  margin: 0;
+	font-family: "Raleway", sans-serif;
+	color: $fontColor;
+	background-color: $background;
+	margin: 0;
 }
 
 h1,
@@ -38,34 +44,38 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rajdhani", sans-serif;
+	font-family: "Rajdhani", sans-serif;
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: 0.9px;
+	color: $fontColor;
+	text-decoration: none;
+	letter-spacing: 0.9px;
 }
 
 .menu {
-  list-style: none;
-}
-.menu a {
-  font-family: "Rajdhani", sans-serif;
-  text-transform: uppercase;
+	list-style: none;
+
+	a {
+		font-family: "Rajdhani", sans-serif;
+		text-transform: uppercase;
+	}
 }
 
+// Navigation.
 #masthead {
-  display: flex;
-  justify-content: space-between;
-}
-#masthead .main-navigation {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-#masthead .menu {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
+
+	.main-navigation {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.menu {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
 }
